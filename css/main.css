@@ -1,0 +1,550 @@
+/*----------------------------------------------------*\
+	CODE
+\*----------------------------------------------------*/
+
+html {
+	background: url(../img/pattern.jpg);
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: none;
+	width: 100%;
+	height: 100%;
+	font-family: 'Advent Pro', sans-serif;
+	background: none;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+	
+#name-div {
+	color: #fff;
+	background: #1a1a1a;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.8em;
+	top: 52px;
+	left: -104px;
+}
+	
+#name-div p {
+	margin-bottom: 0px;
+}
+
+#nav-container {
+	background: url(../img/pattern-menu.jpg);	
+}
+
+.navbar-collapse.collapse,
+.navbar-collapse.collapsing {
+	/* background: url(../img/pattern-menu.jpg); */
+}
+
+.nav>li>a {
+	color: #fff;
+	text-align: center;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	text-decoration: none;
+	background-color: none;
+}
+
+.nav>li>ul {
+	padding: 0px;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.62);
+}
+
+.nav>li>ul>li {
+	border-bottom: 1px solid #000;
+}
+
+.nav>li>ul>li>a {
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.nav>li>ul>li>a:hover, .nav>li>ul>li>a:focus {
+	text-decoration: none;
+	background-color: #2e2e2e;
+}
+
+li.active a{
+	background: url(../img/current-li.png) no-repeat;
+}
+
+.nav>li>ul>li.active a{
+	background: #242424;
+	background-image: none;
+}
+
+.nav>li>ul>li a{
+	background-image: none;
+}
+
+.nav>li:hover, .nav>li:focus {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.navbar-toggle {
+	background-color: #1f1f1f;
+	border: 1px solid #4f4f4f;
+}
+
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+	
+.row {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.4em;
+	font-weight: lighter;
+	
+	background: url(../img/gradient.png) no-repeat center center; 
+}
+
+.bold-word {
+	font-weight: 400;
+	font-size: 2.2em;
+	line-height: 1em;
+	margin-left: -15px;
+}
+
+.about {
+	text-align: justify;
+	margin: auto;
+}
+
+.works {
+	text-align: center;
+	margin: auto;
+	max-width: 699px;
+	max-height: 699px;
+}
+
+.works a{
+	display: inline-block;
+	margin: 8px 5px;
+	text-align: center;
+}
+
+.works,
+.works:before,
+.works:after {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+.content {
+	min-height: 100%;
+	height: 100%;
+}
+
+.modal {
+	overflow: auto;
+	color: #333;
+}
+
+h2 {
+	font-size: 74px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	text-align: center
+}
+
+h3 {
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.cantactme {
+	width: 468px;
+	margin: auto;
+}
+
+.cantactme p {
+	text-align: center;
+}
+
+.imp {
+	font-weight: 400;
+}
+.blueimp-gallery {
+	background: #F2F2F2 !important;
+	background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(208, 208, 208, 0.94) 100%) !important;
+}
+.blueimp-gallery > .description {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	color: #fff;
+	display: none;
+}
+.blueimp-gallery-controls > .description {
+	display: block;
+}
+
+/*----------------------------------------------------*\
+	LARGE DESKTOP
+\*----------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+
+	.col-fixed, .row {
+		float: left;
+	}
+	
+	.col-fixed {
+		width: 462px;
+		bottom: 0;
+		display: block;
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: auto;
+		top: 0;
+		z-index: 1000;
+	}
+	
+	.row {
+		width: 100%;
+		min-height: 100%;
+		height: auto;
+		overflow-y: auto;
+		padding: 0px 0px 0px 462px;
+		margin: 0px;
+		display: table;
+	}
+
+	.contentCentered {
+		display:table-cell;
+		vertical-align: middle;
+	}
+
+	#name-div {
+		position: absolute;
+		padding: 14px 0px;
+		width: 446px;
+		background:  #1a1a1a url(../img/name-div-bg.png) no-repeat center center;
+	
+		-moz-transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
+		-o-transform: rotate(-30deg);
+		-ms-transform: rotate(-30deg);
+		transform: rotate(-30deg);
+	}
+	
+	#nav-container {
+		width: 362px;
+		min-height: 100%;
+		margin: 0px 45px;
+	}
+	
+	.navbar-collapse.collapse,
+	.navbar-collapse.collapsing {
+		max-height: 100%;
+		padding: 156px 0px 0px;
+	}
+
+	.nav>li>a {
+		padding: 1px 5px 1px 0px;
+		margin-left: -5px;
+		width: 378px;
+		font-size: 5.1em;
+	}
+
+	.nav>li>ul>li>a {
+		font-size: 3.0em;
+	}
+
+	li.active a{
+		background-position: 354px center;
+	}
+
+	.about {
+		width: 490px;
+		height: 260px;
+	}
+	
+}
+
+
+/*----------------------------------------------------*\
+	PORTRAIT TABLET TO LANDSCAPE AND DESKTOP
+\*----------------------------------------------------*/
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	.col-fixed {
+		padding-top: 20px;
+		position: fixed;
+		width: 100%
+	}
+	
+	.row {
+		width: calc(100% + 15px);
+		min-height: 100%;
+		height: 100%;
+		display: table;
+	}
+
+	.contentCentered {
+		display:table-cell;
+		vertical-align: middle;
+	}
+	
+	#name-div {
+		position: absolute;
+		padding: 14px 0px;
+		width: 446px;
+		background: #1a1a1a url(../img/name-div-bg.png) no-repeat center center;
+	
+		-moz-transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
+		-o-transform: rotate(-30deg);
+		-ms-transform: rotate(-30deg);
+		transform: rotate(-30deg);
+	}
+	
+	#nav-container {
+		height: 71px;
+	}
+	
+	.navbar-collapse.collapse,
+	.navbar-collapse.collapsing {
+		margin: 0px 0px 0px;
+	}
+	
+	.nav{
+		text-align: right;
+		padding-right: 20px;
+	}
+	
+	.nav>li {
+		display: inline-block;
+	}
+
+	.nav>li>ul {
+		position: absolute;
+		width: 100%;
+	}
+
+	.nav>li.active a{
+		background-position: center 58px;
+	}
+
+	.nav>li>a {
+		padding: 6px 15px;
+		margin-bottom: -12px;
+		height: 83px;
+		font-size: 3.0em;
+	}
+
+	.nav>li>ul>li>a {
+		font-size: 2.0em;
+		padding: 8px 0px;
+	}
+
+	.about {
+		width: 490px;
+		height: 260px;
+	}
+	
+}
+
+
+
+/*----------------------------------------------------*\
+	LANDSCAPE PHONE TO PORTRAIT TABLET
+\*----------------------------------------------------*/
+
+@media screen and (min-width: 768px) and  (max-width: 991px) {
+	
+	.col-fixed {
+		position: fixed;
+		width: 100%
+	}
+	
+	.row {
+		width: calc(100% + 15px);
+		min-height: 100%;
+		height: 100%;
+		display: table;
+	}
+
+	.contentCentered {
+		display:table-cell;
+		vertical-align: middle;
+	}
+	
+	#name-div {
+		padding: 14px 0px;
+		width: 35%;
+		float: left;
+	}
+	
+	#nav-container {
+		width: 65%;
+		height: 63px;
+		float: left;
+	}
+	
+	ul.nav {
+		text-align: right;
+	}
+	
+	.nav>li {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.nav>li>a {
+		padding: 21px 15px;
+		margin-bottom: -12px;
+		height: 75px;
+	}
+
+	.nav>li.active a{
+		background-position: center 50px;
+	}
+
+	.nav>li>ul {
+		position: absolute;
+		width: 100%;
+	}
+
+	.nav>li>ul>li>a {
+		padding: 6px 0px;
+	}
+
+	.about {
+		width: 490px;
+		height: 260px;
+	}
+	
+}
+
+
+
+/*----------------------------------------------------*\
+	LANDSCAPE PHONES AND DOWN
+\*----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+	body {
+		height: 100%;
+	}
+	
+	h2 {
+		font-size: 48px;
+	}
+	
+	h3 {
+		font-size: 19px;
+	}
+	
+	.col-fixed {
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+		top: 0px;	
+	}
+	
+	.row {
+		width: 100%;
+		height: 100%;
+		font-size: 1.0em;
+		margin: 63px 0px 0px 0px;
+		padding: 0px 0px 0px;
+		background: none;
+		display: table;
+	}
+
+	.contentCentered {
+		padding: 0px;
+		display:table-cell;
+		vertical-align: middle;
+	}
+	
+	#about,
+	#web,
+	#identity,
+	#print,
+	#contactme {
+		padding: 0px 20px;
+	}
+	
+	.about {
+		padding: 0px 30px;
+	}
+
+	.works {
+		text-align: center;
+		margin: auto;
+		width: 230px;
+	}
+
+	.bold-word {
+		font-size: 1.7em;
+	}
+	
+	#name-div {
+		width: 100%;
+		padding: 14px 0px;
+		height: 63px;
+	}
+	
+	#name-div p {
+		float: left;
+		padding: 0px 24px;
+	}
+	
+	.navbar-toggle {
+		margin-right: 24px;
+		padding: 9px 10px;
+		margin-top: 1px;
+		margin-bottom: 0px;
+	}
+
+	.nav>li.active a{
+		background: none;
+	}
+
+	.nav>li>ul>li>a {
+		padding: 5px 0px;
+	}
+	
+	.navbar-collapse {
+		padding: 0px;
+	}
+	
+	img {
+		max-width: 35px;
+	}
+	
+	.cantactme {
+		width: 250px;
+		margin: auto;
+	}
+	
+}
