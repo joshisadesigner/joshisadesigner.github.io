@@ -12,7 +12,7 @@ body {
 	background-color: none;
 	width: 100%;
 	height: 100%;
-	font-family: 'Advent Pro', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	background: none;
 }
 
@@ -103,7 +103,6 @@ li.active a{
 }
 	
 .row {
-	font-family: 'Quicksand', sans-serif;
 	font-size: 1.4em;
 	font-weight: lighter;
 	
@@ -230,7 +229,7 @@ a:hover {
 		min-height: 100%;
 		height: auto;
 		overflow-y: auto;
-		padding: 0px 0px 0px 462px;
+		padding: 0;
 		margin: 0px;
 		display: table;
 	}
@@ -474,7 +473,7 @@ a:hover {
 		width: 100%;
 		height: 100%;
 		font-size: 1.0em;
-		margin: 63px 0px 0px 0px;
+		margin: 0;
 		padding: 0px 0px 0px;
 		background: none;
 		display: table;
